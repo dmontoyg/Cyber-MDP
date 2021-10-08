@@ -1,0 +1,239 @@
+/*Ajustes Grid*/
+.x-container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+.x-container-fluid {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.x-grid-row.content-center {
+    align-items: center;
+    justify-content: center;
+}
+.x-grid-row [class*=x-grid-col-] {
+    border: none;
+    padding: 5px;
+    z-index: 1;
+}
+.x-grid-row .x-grid-col-33:not(.responsivent) {
+    border-bottom: none;
+}
+/*Estilos Slider*/
+.slick-arrow {
+    display: none !important;
+}
+.black-days .slick-next:before,
+.black-days .slick-prev:before {
+    font-size: 30px !important;
+    line-height: 1;
+    opacity: .75 !important;
+    color: #69bace !important;
+    border: 2px solid transparent;
+}
+.black-days .top-banner img {
+    border-radius: 0 !important;
+}
+.black-days .slider-cat-black .slick-next,
+.black-days .slider-cat-black .slick-prev {
+    top: 40% !important;
+}
+.black-days .slick-next,
+.black-days .slick-prev {
+    top: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    background: #fdfdfd57;
+    border-radius: 7px;
+}
+.black-days .slick-dots li button:before {
+    font-size: 0px !important;
+    color: #69bace !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+.black-days .slick-dots li.slick-active button:before {
+    opacity: .85 !important;
+    color: #69bace !important;
+}
+/*Custom styles*/
+.black-days .cat-black {
+    padding: 10px;
+    display: flex !important;
+}
+.black-days .cat-black a img {
+    border-radius: 50% !important;
+    width: 100px;
+    height: 100px !important;
+    margin: 10px auto;
+    border: 3px solid #fff !important;
+    -webkit-transition: all 0.2s linear !important;
+    transition: all 0.1s linear !important;
+}
+.black-days .cat-black a img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.black-days .fourbanners a img:hover,
+.black-days .threebanners a img:hover,
+.black-days .black-btm a img:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.black-days .fourbanners a img,
+.black-days .threebanners a img,
+.black-days .black-btm a img {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.black-days #render-vtex img {
+    transition: all 0.05s linear;
+    border-radius: 10px;
+    height: auto;
+}
+.black-days .cat-black a {
+    text-align: center;
+    text-decoration: none;
+    color: #0ba3c0;
+    font-family: inherit;
+}
+.black-days .slider-cat-black {
+    margin-top: 20px;
+    margin-bottom: 40px !important;
+}
+.black-days .slide-black-bottom {
+    margin-bottom: 45px !important;
+    z-index: 2;
+}
+.black-days .black-btm {
+    padding: 15px;
+}
+.black-days .four-item,
+.black-days .three-item {
+    padding-bottom: 15px !important;
+}
+.black-days .favoritos-nav {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    z-index: 1;
+}
+.black-days .favoritos-nav a img:hover {
+    filter: contrast(1.5) !important;
+}
+.black-days .favoritos-nav a img {
+    border: none !important;
+    border-radius: 10px 0 0 10px !important;
+    filter: saturate(1.5) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+@media (min-width: 992px) {
+    .black-days .fourbanners {
+        margin: 10px 0 40px;
+    }
+    .black-days .four-item {
+        padding: 20px !important;
+    }
+    .black-days .threebanners {
+        margin-bottom: 40px;
+    }
+    .black-days .three-item {
+        padding: 20px !important;
+    }
+    .black-days .black-btm {
+        padding: 20px !important;
+    }
+    .black-days .favoritos-nav a img {
+        width: 50px !important;
+    }
+}
+.sun-wrapper {
+    background: #fdd6a9;
+    background-image: url(/arquivos/textura-solares.svg);
+    padding-bottom: 2rem;
+    margin-top: -24px;
+    position: relative;
+}
+.sun-wrapper .x-container,
+.sun-wrapper .x-container-fluid {
+    z-index: 1;
+}
+/*.conchas {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 0;
+}
+.palmeras {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    z-index: 0;
+}
+
+.sandalias {
+    position: absolute;
+    bottom: -61px;
+    left: -36px;
+    z-index: 0;
+}
+.palmeras:before {
+    content: url(/arquivos/palma-solares.svg);
+}
+.sandalias:before {
+    content: url(/arquivos/sandalia-solares.svg);
+}*/
+
+/* Iconos Cyber Lunes */
+
+.carrito-cyber {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 7%;
+    z-index: 0;
+}
+
+.carrito-cyber:before {
+    content: url(/arquivos/CARRITO-CYBERDAYS.svg);
+}
+
+.bolsa-cyber {
+    position: absolute;
+    bottom: -61px;
+    left: 45px;
+    width: 7%;
+    z-index: 0;
+}
+
+.bolsa-cyber:before {
+    content: url(/arquivos/BOLSA-CYBERDAYS.svg);
+}
+
+.descuento-cyber {
+    position: absolute;
+    bottom: 110px;
+    left: 45px;
+    width: 7%;
+    z-index: 0;
+}
+
+.descuento-cyber:before {
+    content: url(/arquivos/DESCUENTO-CYBERDAYS.svg);
+}
+
+@media (max-width: 768px) {
+    .palmeras {
+        top: 0;
+        right: 0;
+    }
+    .conchas {
+        top: 400px;
+        left: 0;
+    }
+    .sandalias {
+        bottom: -40px;
+    }
+}

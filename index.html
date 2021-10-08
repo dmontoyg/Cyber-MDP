@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
   <head>
-    <title>Blue Christmas - Medipiel</title>
+    <title>Cyber Days - Medipiel</title>
 
     <vtex:metaTags/>
     <link rel="icon" href="https://medipielsa.vteximg.com.br/arquivos/medipiel-favicon-02.ico" />
@@ -9,15 +9,109 @@
 
     <link href="https://www.medipiel.com.co/files/medipiel-global-styles.css" rel="stylesheet" />
     <link href="https://www.medipiel.com.co/files/main.chunk.css" rel="stylesheet" />
+    <link href="https://www.medipiel.com.co/arquivos/main-m.css" rel="stylesheet" />
     <link href="https://www.medipiel.com.co/files/flash-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/arquivos/slick-m.css"/>
+    <link rel="stylesheet" href="/arquivos/slick-theme-m.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
 
+    <style>
+    .page .homepage {
+        display: none;
+    }
+
+    .contenedor-home-cyber{
+      display: block;
+    }
+
+      .slide-black-bottom {
+        margin-top: 50px;
+      }
+      .slider-marcas .product-name {
+        width: 100%;
+        display: block;
+        padding: 0 10px;
+        text-align: center;
+      }
+
+      .slider-marcas .price {
+          text-align: center;
+          display: block;
+          padding: 8px 0px;
+      }
+
+      .slider-marcas .best-price {
+        color: #7f535f;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .slider-marcas .product-name a {
+        color: #a17a85;
+        font-weight: normal;
+        padding:5px 0px;
+        height: 60px;
+        overflow: hidden;
+      }
+
+      .slider-marcas span.add {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2.4em;
+        border: 0;
+        border-radius: 2rem;
+        background-color: #9f8a90;
+        color: var(--white);
+        transition: var(--primary-transition);
+      }
+
+      .slider-marcas .add a {
+        color: #fff;
+      }
+
+      .titulo-principal h1{
+        color: #a17a85;
+      }
+
+      .slider-marcas .slick-slide {
+        margin: 10px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+      .x-container .prateleira h2{
+        display: none;
+      }
+
+      .top-banner .slick-dots{
+        display: none;
+      }
+      .sun-wrapper {
+        background: #eddce1 !important;
+        position:relative;
+        margin-top: -15px;
+      }
+
+      .black-days .cat-black a {
+        color: #6c757d !important;
+      }
+
+      .x-container-fluid.top-banner.slider-header.hover-2.slick-initialized.slick-slider {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    </style>
+
     <script type="text/javascript">
-          $(document).ready(function(){
+              $(document).ready(function(){
     
                 $('.slider-header').slick({
                       dots: true,
@@ -96,6 +190,49 @@
                         }
                       ]
                     });
+
+                    
+                $('.slider-marcas').slick({
+                      dots: false,
+                      infinite: true,
+                      autoplay: true,
+                      autoplaySpeed: 5000,
+                      speed: 100,
+                      slidesToShow: 5,
+                      slidesToScroll: 1,
+                      responsive: [
+                        {
+                          breakpoint: 1024,
+                          settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            infinite: true,
+                            dots: true
+                          }
+                        },
+                        {
+                          breakpoint: 600,
+                          settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                          }
+                        },
+                        {
+                          breakpoint: 480,
+                          settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                          }
+                        }
+                      ]
+                    });
+
+                });
+
+    
+          $(document).ready(function(){
+
+                    $('#vitrina-productos-convenio .slider-marcas').slick('unslick');
                 });
             </script>
 </head>
@@ -112,179 +249,217 @@
 </div>
 <div id="root"></div>
 <div id="render-vtex">
+        <div class="contenedor-home-cyber">
+            <div class="x-container-fluid top-banner slider-header hover-2">
+                <div>
+                    <a href="/ofertas">
+                        <picture>
+                        <source media="(min-width:768px)" srcset="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-DESKTOP.jpg"  style="width:100%;" /><!--Desktop*/-->
+                        <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-MOBILE.jpg" alt="summer days" style="width:100%;" /><!--Mobile-->
+                        </picture>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sun-wrapper">
+
+                <div class="x-container slider-cat-black">
+                    <div class="cat-black">
+                        <a href="/Proteccion-solar?map=c">
+                            <img src="https://www.medipiel.com.co/arquivos/BOTON-CATEGORIA-PROTECCION-SOLAR-v2.jpg" width="100%" />
+                            <h4>Protección solar</h4>
+                        </a>
+                    </div>
+                    <div class="cat-black">
+                        <a href="/Skin-care/Antiedad?map=c,specificationFilter_1904">
+                            <img src="https://www.medipiel.com.co/arquivos/antiedad.png" width="100%" />
+                            <h4>Antiedad</h4>
+                        </a>
+                    </div>
+                    <div class="cat-black">
+                        <a href="/Skin-care/Hidratantes?map=c,c">
+                            <img src="https://www.medipiel.com.co/arquivos/hidratantes.png" width="100%" />
+                            <h4>Hidratantes</h4>
+                        </a>
+                    </div>
+                    <div class="cat-black">
+                        <a href="/Skin-care/Limpiadores?map=c,c">
+                            <img src="https://medipielsa.vteximg.com.br/arquivos/BOTON-CATEGORIA-LIMPIADORES-v2.jpg" width="100%" />
+                            <h4>Limpiadores</h4>
+                        </a>
+                    </div>
+                    <div class="cat-black">
+                        <a href="/Skin-care/Exfoliantes?map=c,c">
+                            <img src="https://www.medipiel.com.co/arquivos/exfoliantes.png" width="100%" />
+                            <h4>Exfoliantes</h4>
+                        </a>
+                    </div>
+                    <div class="cat-black">
+                        <a href="/Skin-care/Cuidado-de-ojos?map=c,c">
+                            <img src="https://www.medipiel.com.co/arquivos/contorno-de-ojos.png" width="100%" />
+                            <h4>Contorno ojos</h4>
+                        </a>
+                    </div>
+                    <div class="cat-black">
+                        <a href="/Maquillaje?map=c">
+                            <img src="https://www.medipiel.com.co/arquivos/maquillaje-rostro.png" width="100%" />
+                            <h4>Maquillaje</h4>
+                        </a>
+                    </div>
+                    <div class="cat-black">
+                        <a href="/ofertas">
+                            <img src="https://www.medipiel.com.co/arquivos/ofertas.png" width="100%" />
+                            <h4>Ofertas</h4>
+                        </a>
+                    </div>
+                
+                </div>
 
 
-    
-<div class="x-container-fluid top-banner slider-header hover-2">
-    <div>
-        <a href="/Skin-care?map=c">
-        	<picture>
-              <source media="(min-width:768px)" srcset="https://www.medipiel.com.co/arquivos/BANNER-MICROSITIO-SUMMERSALE-BONO-DESKTOP.jpg"  style="width:100%;" /><!--Desktop*/-->
-              <img src="https://www.medipiel.com.co/arquivos/BANNER-MICROSITIO-SUMMERSALE-BONO-MOBILE.jpg" alt="summer days" style="width:100%;" /><!--Mobile-->
-            </picture>
-        </a>
-    </div>
-</div>
+            <div class="x-container">
+                <div class="x-grid-row fourbanners">
+                
+                    <div class="x-grid-col-50 four-item">
+                        <a href="/645?map=productClusterIds">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-25.jpg" width="100%" class="hover-2" />
+                        </a>
+                    </div>
+                    
+                    <div class="x-grid-col-50 four-item">
+                        <a href="/649?map=productClusterIds">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-20-v2.jpg" width="100%" class="hover-2" />
+                        </a>
+                    </div>
+                    
 
-<div class="sun-wrapper">
+            <div class="x-container">
+                <div class="tittle-m titulo-principal nuestros-recomendados">
+                    <h1>Productos más vendidos</h1>
+                </div>
+                <vtex:contentPlaceHolder id="prod-masvendidos" />
+            </div>
+                    
+                    
+                    <!--div class="x-grid-col-50 four-item" >
+                        <a href="/426?map=productClusterIds">
+                            <img src="https://www.medipiel.com.co/arquivos/solares-20off.jpg" width="100%" class="hover-2"/>
+                        </a>
+                    </div>
 
-    <div class="x-container slider-cat-black">
-        <div class="cat-black">
-            <a href="/Proteccion-solar?map=c">
-                <img src="https://www.medipiel.com.co/arquivos/proteccion-solar.png" width="100%" />
-                <h4>Protección solar</h4>
-            </a>
+                    <div class="x-grid-col-50 four-item">
+                        <a href="/especiales/test-solares">
+                            <img src="https://www.medipiel.com.co/arquivos/TEST-SOLARES.jpg" width="100%" class="hover-2" />
+                        </a>
+                    </div-->
+                    
+                </div>
+            </div>
+
+            <div class="x-container ">
+                <div class="x-grid-row threebanners">
+                
+                    <div class="x-grid-col-25 three-item">
+                        <a href="/Proteccion-solar/Facial?map=c,c">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-PROTECCION-SOLAR-FACIAL.jpg" width="100%" />
+                        </a>
+                    </div>
+                
+                    <div class="x-grid-col-25 three-item">
+                        <a href="/Skin-care/Antiedad?map=c,specificationFilter_1904">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-ANTIEDAD-v2.jpg" width="100%"/>
+                        </a>
+                    </div>
+
+                    <div class="x-grid-col-25 three-item">
+                        <a href="/Skin-care/Hidratantes?map=c,c">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-HIDRATANTES.jpg" width="100%"/>
+                        </a>
+                    </div>
+
+                <div class="x-grid-col-25 three-item">
+                        <a href="/Proteccion-solar/Ni%C3%B1os-y-bebes?map=c,c">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-BEBES-Y-NINOS.jpg" width="100%"/>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="x-container">
+                <div class="tittle-m titulo-principal nuestros-recomendados">
+                    <h1>Productos nuevos</h1>
+                </div>
+                <vtex:contentPlaceHolder id="prod-nuevos" />
+            </div>
+
+
+
+            <div class="x-container">
+                <div class="slide-black-bottom">
+                
+                    <div class="black-btm hover-1">
+                        <a href="/Corporal?map=c">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-CORPORAL-v2.jpg" width="100%"/>
+                        </a>
+                    </div>
+                    
+                    <div class="black-btm hover-1">
+                        <a href="/Skin-care/Piel%20grasa?map=c,specificationFilter_24">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-PIEL-GRASA-v2.jpg" width="100%"/>
+                        </a>
+                    </div>
+                    
+                    <div class="black-btm hover-1">
+                        <a href="/Skin-care/Piel%20Mixta?map=c,specificationFilter_24">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-PIEL-MIXTA-v2.jpg" width="100%"/>
+                        </a>
+                    </div>
+                    
+                    <div class="black-btm hover-1">
+                        <a href="/Skin-care/Piel%20seca?map=c,specificationFilter_24">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-PIEL-SECA-v2.jpg" width="100%"/>
+                        </a>
+                    </div>
+
+                    <div class="black-btm hover-1">
+                        <a href="/Skin-care/Piel%20sensible?map=c,specificationFilter_24">
+                            <img src="https://www.medipiel.com.co/arquivos/MICROSITIO-BANNERS-CYBERDAYS-OCTUBRE-PIEL-SENSIBLE-v2.jpg" width="100%"/>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carrito-cyber"></div>
+            <div class="bolsa-cyber"></div>
+            <div class="descuento-cyber"></div>
+
+
+
+            </div>
         </div>
-        <div class="cat-black">
-            <a href="/Skin-care/Antiedad?map=c,specificationFilter_1904">
-                <img src="https://www.medipiel.com.co/arquivos/antiedad.png" width="100%" />
-                <h4>Antiedad</h4>
-            </a>
-        </div>
-        <div class="cat-black">
-            <a href="/Skin-care/Hidratantes?map=c,c">
-                <img src="https://www.medipiel.com.co/arquivos/hidratantes.png" width="100%" />
-                <h4>Hidratantes</h4>
-            </a>
-        </div>
-        <div class="cat-black">
-            <a href="/Skin-care/Limpiadores?map=c,c">
-                <img src="https://medipielsa.vteximg.com.br/arquivos/limpiadores.png" width="100%" />
-                <h4>Limpiadores</h4>
-            </a>
-        </div>
-        <div class="cat-black">
-            <a href="/Skin-care/Exfoliantes?map=c,c">
-                <img src="https://www.medipiel.com.co/arquivos/exfoliantes.png" width="100%" />
-                <h4>Exfoliantes</h4>
-            </a>
-        </div>
-        <div class="cat-black">
-            <a href="/Skin-care/Cuidado-de-ojos?map=c,c">
-                <img src="https://www.medipiel.com.co/arquivos/contorno-de-ojos.png" width="100%" />
-                <h4>Contorno ojos</h4>
-            </a>
-        </div>
-        <div class="cat-black">
-            <a href="/Maquillaje?map=c">
-                <img src="https://www.medipiel.com.co/arquivos/maquillaje-rostro.png" width="100%" />
-                <h4>Maquillaje</h4>
-            </a>
-        </div>
-        <div class="cat-black">
-            <a href="/ofertas">
-                <img src="https://www.medipiel.com.co/arquivos/ofertas.png" width="100%" />
-                <h4>Ofertas</h4>
-            </a>
-        </div>
-       
-    </div>
-
-
-<div class="x-container ">
-	<div class="x-grid-row fourbanners">
-	
-        <div class="x-grid-col-50 four-item">
-			<a href="/429?map=productClusterIds">
-				<img src="https://www.medipiel.com.co/arquivos/solares-30off.jpg" width="100%" class="hover-2" />
-			</a>
-		</div>
-		
-		<div class="x-grid-col-50 four-item">
-			<a href="/428?map=productClusterIds">
-				<img src="https://www.medipiel.com.co/arquivos/solares-25off.jpg" width="100%" class="hover-2" />
-			</a>
-		</div>
-		
-		<div class="x-grid-col-50 four-item" >
-			<a href="/426?map=productClusterIds">
-				<img src="https://www.medipiel.com.co/arquivos/solares-20off.jpg" width="100%" class="hover-2"/>
-			</a>
-		</div>
-
-		<div class="x-grid-col-50 four-item">
-			<a href="/especiales/test-solares">
-				<img src="https://www.medipiel.com.co/arquivos/TEST-SOLARES.jpg" width="100%" class="hover-2" />
-			</a>
-		</div>
-		
-	</div>
-</div>
-
-<div class="x-container ">
-	<div class="x-grid-row threebanners">
-	
-		<div class="x-grid-col-33 three-item">
-			<a href="/Proteccion-solar/Facial?map=c,c">
-				<img src="https://www.medipiel.com.co/arquivos/FACIAL-SOLARES.jpg" width="100%" />
-			</a>
-		</div>
-	
-	    <div class="x-grid-col-33 three-item">
-			<a href="/Proteccion-solar/Niños-y-bebes?map=c,c">
-				<img src="https://www.medipiel.com.co/arquivos/NINOS-SOLARES.jpg" width="100%"/>
-			</a>
-		</div>
-
-		<div class="x-grid-col-33 three-item">
-			<a href="/Skin-care/Hidratantes?map=c,c">
-				<img src="https://www.medipiel.com.co/arquivos/HIDRATANTES-SOLARES.jpg" width="100%"/>
-			</a>
-		</div>
-
-	</div>
-</div>
-
-
-
-<div class="x-container">
-	<div class="slide-black-bottom">
-	
-		<div class="black-btm hover-1">
-			<a href="/Proteccion-solar/Facial/Piel%20grasa?map=c,c,specificationFilter_24">
-				<img src="https://www.medipiel.com.co/arquivos/GRASA-SOLARES.jpg" width="100%"/>
-			</a>
-		</div>
-		
-		<div class="black-btm hover-1">
-			<a href="/Proteccion-solar/Facial/Piel%20Mixta?map=c,c,specificationFilter_24">
-				<img src="https://www.medipiel.com.co/arquivos/MIXTA-SOLARES.jpg" width="100%"/>
-			</a>
-		</div>
-		
-		<div class="black-btm hover-1">
-			<a href="/Proteccion-solar/Facial/Piel%20seca?map=c,c,specificationFilter_24">
-				<img src="https://www.medipiel.com.co/arquivos/SECA-SOLARES.jpg" width="100%"/>
-			</a>
-		</div>
-		
-		<div class="black-btm hover-1">
-			<a href="/Proteccion-solar/Facial/Piel%20sensible?map=c,c,specificationFilter_24">
-				<img src="https://www.medipiel.com.co/arquivos/SENSIBLE-SOLARES.jpg" width="100%"/>
-			</a>
-		</div>
-
-		<div class="black-btm hover-1">
-			<a href="/Proteccion-solar/Corporal?map=c,c">
-				<img src="https://www.medipiel.com.co/arquivos/CUERPO-SOLARES.jpg" width="100%"/>
-			</a>
-		</div>
-
-	</div>
-</div>
-
-<div class="palmeras"></div>
-<div class="conchas"></div>
-<div class="sandalias"></div>
-
-
-
-</div>
   </div>
     <div id="footer"></div>
     <script src="https://www.medipiel.com.co/files/runtime-main.js"></script>
     <script src="https://www.medipiel.com.co/files/2.chunk.js"></script>
-    <script src="https://www.medipiel.com.co/files/main.chunk.js"></script>           
+    <script src="https://www.medipiel.com.co/files/main.chunk.js"></script>
+     <!-- Scripts -->
+    <script src="/arquivos/jquery-m.min.js"></script>
+    <script src="/arquivos/slick-m.min.js"></script>
+    <script src="/arquivos/zuck-m.min.js"></script>
+    <script src="/arquivos/config-m.js"></script>
+    <script src="/files/histories-data-h.js"></script>
+  
+     <script>
+     $(".prateleira").find("ul li.helperComplement").remove();
+      $(".prateleira ul li").replaceWith(function() { 
+          return "<div>" + this.innerHTML + "</div>"; 
+      });
+    
+      $(".prateleira ul").replaceWith(function() { 
+          return '<div class="slider-marcas">' + this.innerHTML + "</div>"; 
+      });
+     </script>   
   
   </body>
 </html>
